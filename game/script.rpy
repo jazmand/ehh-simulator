@@ -3,8 +3,14 @@
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 
-define e = Character("Eileen")
-
+define p = Character("pc")
+define ao = Character("aoi")
+define a = Character("ayumi")
+define ka = Character("katsumi")
+define ke = Character("kenji")
+define r = Character("rikona")
+define t = Character("taigen")
+define y = Character("yasuo")
 
 # The game starts here.
 
@@ -14,19 +20,25 @@ label start:
     # add a file (named either "bg room.png" or "bg room.jpg") to the
     # images directory to show it.
 
-    scene bg room
+    scene bg maseda
+    play music "<from 5>audio/main_theme.mp3" fadein 1.0 volume 0.5
+    with fade
 
     # This shows a character sprite. A placeholder is used, but you can
     # replace it by adding a file named "eileen happy.png" to the images
     # directory.
 
-    show eileen happy
-
     # These display lines of dialogue.
 
-    e "You've created a new Ren'Py game."
+    p "Wow, my first day at Maseda University! I worked hard my whole life, and now I’ve finally made it!"
 
-    e "Once you add a story, pictures, and music, you can release it to the world!"
+    p "I can’t wait to study all kinds of new things! Meet all kinds of new people! And maybe… could this be the year I… fall in…"
+
+    show kenji
+
+    stop music fadeout 1.0
+
+    ke "Hi! I'm Kenji."
 
     # This ends the game.
 

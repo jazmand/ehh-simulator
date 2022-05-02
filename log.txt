@@ -1,4 +1,4 @@
-Mon May  2 16:16:06 2022
+Mon May  2 16:23:48 2022
 Windows-10-10.0.19041
 Ren'Py 7.4.11.2266
  
@@ -45,5 +45,11 @@ Renderer: 'Intel(R) Iris(R) Xe Graphics'
 Version: '4.6.0 - Build 30.0.101.1660'
 Display Info: None
 Screen sizes: virtual=(1920, 1080) physical=(1818, 1023) drawable=(1818, 1023)
-Could not open 'cache/shaders.txt':
 Maximum texture size: 4096x4096
+Cleaning stores took 0.00s
+Init translation took 0.00s
+Build styles took 0.00s
+Load screen analysis took 0.01s
+Analyze screens took 0.00s
+Prepare screens took 0.00s
+Running _start took 0.00s
