@@ -3,7 +3,6 @@
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 
-define p = Character("pc")
 define ao = Character("aoi")
 define a = Character("ayumi")
 define ka = Character("katsumi")
@@ -15,6 +14,17 @@ define y = Character("yasuo")
 # The game starts here.
 
 label start:
+
+    # Get user name, if nothing is entered, make it "Unkown".
+
+    python:
+        povname = renpy.input("What is your name?", length=32)
+        povname = povname.strip()
+
+        if not povname:
+            povname = "Unknown"
+    
+    define p = Character("[povname]", color="#4346f1")
 
     # Show a background. This uses a placeholder by default, but you can
     # add a file (named either "bg room.png" or "bg room.jpg") to the
