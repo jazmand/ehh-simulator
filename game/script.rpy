@@ -44,11 +44,27 @@ label start:
 
     p "I can’t wait to study all kinds of new things! Meet all kinds of new people! And maybe… could this be the year I… fall in…"
 
-    show kenji
+    show kenji:
+        xpos 500 ypos 500
+
+    show rikona:
+        xpos 1000 ypos 550
 
     stop music fadeout 1.0
 
-    ke "Hi! I'm Kenji."
+    Character("Random Student 1", color="#000000") "EEEH! It\’s already 8:57am!? Quick, we\’re going to be late for the first year orientation!"
+
+    Character("Random Student 2", color="#000000") "EEEH! Yabai! Let\’s go!"
+
+    show kenji at right with move
+
+    hide kenji
+
+    show rikona at right with move
+
+    hide rikona
+    
+    p "No way! I’m going to be late for first year orientation! Let me find my map and schedule…"
 
     # This ends the game.
 
