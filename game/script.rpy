@@ -31,7 +31,7 @@ label start:
     # images directory to show it.
 
     scene bg maseda
-    # play music "<from 5>audio/main_theme.mp3" fadein 1.0 volume 0.5
+    play music "<from 5>audio/main_theme.mp3" fadein 1.0 volume 0.5
     with fade
 
     # This shows a character sprite. A placeholder is used, but you can
@@ -74,7 +74,7 @@ label start:
 
     p "Oh crap, my schedule is ruined! I’m going to be late! What should I do? Where should I go? Should I ask someone?"
 
-    pause 1.0
+    pause 0.5
 
     $ randRoomate = renpy.random.choice(['rm1', 'rm2', 'rm3','rm4', 'rm5', 'rm6', 'rm7'])
     if randRoomate == 'rm1' or randRoomate == 'rm2' or randRoomate == 'rm3':
@@ -90,6 +90,8 @@ label start:
         zoom 0.5
 
     p "Right! I’ll ask [pronoun], [randRoomate]!"
+
+    play sound "<from 1 to 2>audio/running-road.mp3" volume 0.2
 
     show katsumi:
         ease 0.5 xalign 0.5
@@ -116,15 +118,44 @@ label start:
 
     hide katsumi
 
-    scene bg maseda 
-    with vpunch
-    with vpunch
-    with vpunch
-    with vpunch
-    with vpunch
+    play sound "<from 1 to 3>audio/running-road.mp3" volume 0.5 
 
+    scene bg maseda
+    with vpunch
+    with vpunch
+    with vpunch
+    with vpunch
+    with vpunch
+    
+    pause 0.5
 
-    pause 2.0
+    p "This is way too much for my first day! Holding hands with a cutie and running through a romantic, cherry-blossom filled campus? I think I’m going to have a heart attack."
+
+    pause 0.5
+
+    scene black with dissolve
+
+    randRoomate "Here we are!"
+
+    play sound "audio/wood-door-opening.mp3" volume 0.5
+    
+    pause 1.0
+
+    scene bg lecture with dissolve
+
+    queue sound "<from 1 to 3>audio/chatter.mp3" volume 0.5 
+
+    pause 3.0
+
+    p "Oh no… everyone’s staring at me… I… I can’t take this… I’m going to burst!"
+
+    "Headmaster" "Ah, latecomers I see! Take a seat and try not to disturb any more of my welcome speech. I’ll be sure to keep an eye on you troublemakers."
+
+    p "What? No! This can’t happen on my first day! This isn’t my fault! I - I don’t understand!"
+
+    menu:
+        "EEEEEEEEEEHHH?":
+            p "EEEEEEEEEEHHH?"
 
     # This ends the game.
 
