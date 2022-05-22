@@ -27,13 +27,13 @@ transform show_anxiety(dt=None, start=1, end=8):
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 
-define ao = Character("aoi")
-define a = Character("ayumi")
-define ka = Character("katsumi")
-define ke = Character("kenji")
-define r = Character("rikona")
-define t = Character("taigen")
-define y = Character("yasuo")
+define aoi = Character("Aoi", color="#6f00ff")
+define ayumi = Character("Ayumi", color="#39FF14")
+define katsumi = Character("Katsumi", color="#ffffff")
+define kenji = Character("Kenji", color="#e62121")
+define rikona = Character("Rikona", color="#ffe714")
+define taigen = Character("Taigen", color="#0034e0")
+define yasuo = Character("Yasuo", color="#ff5100")
 
 # The game starts here.
 
@@ -48,7 +48,7 @@ label start:
         if not povname:
             povname = "Unknown"
     
-    define p = Character("[povname]", color="#4346f1", what_italic=True)
+    define p = Character("[povname]", color="#000000", what_italic=True)
 
     # Show a background. This uses a placeholder by default, but you can
     # add a file (named either "bg room.png" or "bg room.jpg") to the
@@ -98,12 +98,12 @@ label start:
 
     pause 0.5
 
-    $ randRoomate = renpy.random.choice(['rm1', 'rm2', 'rm3','rm4', 'rm5', 'rm6', 'rm7'])
-    if randRoomate == 'rm1' or randRoomate == 'rm2' or randRoomate == 'rm3':
+    $ randRoomate = renpy.random.choice([aoi, ayumi, katsumi, kenji, rikona, taigen, yasuo])
+    if randRoomate == ayumi or randRoomate == rikona or randRoomate == katsumi:
         $ pronoun = 'her'
-    elif randRoomate == 'rm4' or randRoomate == 'rm5':
+    elif randRoomate == taigen or randRoomate == yasuo or randRoomate == kenji:
         $ pronoun = 'him' 
-    elif randRoomate == 'rm6' or randRoomate == 'rm7':
+    else:
         $ pronoun = 'them'
 
     scene bg maseda
@@ -113,7 +113,7 @@ label start:
 
     p "Right! I’ll ask [pronoun], [randRoomate]!"
 
-    play sound "<from 1 to 2>audio/running-road.mp3" volume 0.2
+    play sound "<from 1 to 2>audio/running-road.mp3" volume 0.5
 
     show katsumi:
         ease 0.5 xalign 0.5
