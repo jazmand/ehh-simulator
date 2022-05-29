@@ -2,13 +2,9 @@ label day_1:
     # Get user name, if nothing is entered, make it "Unkown".
 
     python:
-        povname = renpy.input("What is your name?", length=32)
-        povname = povname.strip()
-
-        if not povname:
-            povname = "Unknown"
+        povname = "????"
     
-    define p = Character("[povname]", color="#000000", what_italic=True)
+    define p = Character("[povname]", what_italic=True)
 
     # Show a background. This uses a placeholder by default, but you can
     # add a file (named either "bg room.png" or "bg room.jpg") to the
