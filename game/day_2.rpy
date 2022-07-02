@@ -14,7 +14,7 @@ label day_2:
 
     p "Oh no… I’m not ready to meet them all at once!"
 
-    scene black with dissolve
+    scene bg stats with dissolve
 
     show sprite_animation:
         xalign 0.8
@@ -29,7 +29,7 @@ label day_2:
     ZODIAC SIGN: ARIES\n
     BIRTHDAY: MARCH 21ST\n
     LIKES: pork bowl, judo, k-dramas\n
-    DISLIKES: soup, losing, lazy mornings{/color}" 
+    DISLIKES: soup, losing, lazy mornings{/color}"
 
     scene bg communal with dissolve
 
@@ -68,7 +68,7 @@ label day_2:
 
     yasuo "I don’t need to train my muscles. Only my mind."
 
-    scene black with dissolve
+    scene bg stats with dissolve
 
     show sprite_animation:
         xalign 0.8
