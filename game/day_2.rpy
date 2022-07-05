@@ -99,7 +99,6 @@ label day_2:
 
     yasuo "Are you spiritual, [p]?"
 
-    # TO DO
     # ----------CHOICE HERE----------
 
     p "{plain}Eeeh...{/plain}"
