@@ -23,9 +23,9 @@ label day_1:
     p "I can’t wait to study all kinds of new things! Meet all kinds of new people! And maybe… could this be the year I… fall in…"
 
     show kenji: 
-        xpos 0.25 ypos 0.55
+        xpos 0.25
     show rikona: 
-        xpos 0.5 ypos 0.64
+        xpos 0.5 ypos 0.2
     with dissolve
 
     stop music fadeout 1.0
@@ -55,6 +55,7 @@ label day_1:
     pause 0.5
 
     $ randRoomate = renpy.random.choice([aoi, ayumi, katsumi, kenji, rikona, taigen, yasuo])
+    image randRoomateImage = "[randRoomate].png"
     if randRoomate == ayumi or randRoomate == rikona or randRoomate == katsumi:
         $ pronoun = 'her'
     elif randRoomate == taigen or randRoomate == yasuo or randRoomate == kenji:
@@ -64,14 +65,14 @@ label day_1:
 
     scene bg maseda
 
-    show katsumi at right:
+    show randRoomateImage at right:
         zoom 0.5
 
     p "Right! I’ll ask [pronoun], [randRoomate]!"
 
     play sound "<from 1 to 2>audio/running_road.mp3" volume 0.5
 
-    show katsumi:
+    show randRoomateImage:
         ease 0.5 xalign 0.5
         ease 0.5 zoom 1.0
     with vpunch
@@ -92,9 +93,9 @@ label day_1:
 
     p "{plain}{size=+10}eeeeh!{/size}{/plain}"
 
-    show katsumi at offscreenright with move
+    show randRoomateImage at offscreenright with move
 
-    hide katsumi
+    hide randRoomateImage
 
     play sound "<from 1 to 3>audio/running_road.mp3" volume 0.5 
 
@@ -109,11 +110,15 @@ label day_1:
 
     p "This is way too much for my first day! Holding hands with a cutie and running through a romantic, cherry-blossom filled campus? I think I’m going to have a heart attack."
 
+    randRoomate "We’re gonna make it! Look - here we are!"
+
+    p "Yes! It’s 9:00:06… Just in time!"
+
+    randRoomate "In we go!"
+
     pause 0.5
 
     scene black with dissolve
-
-    randRoomate "Here we are!"
 
     play sound "audio/door_opening.mp3" volume 0.5
     
@@ -127,7 +132,7 @@ label day_1:
 
     p "Oh no… everyone’s staring at me… I… I can’t take this… I’m going to burst!"
 
-    "Headmaster" "Ah, latecomers I see! Take a seat and try not to disturb any more of my welcome speech. I’ll be sure to keep an eye on you troublemakers."
+    "Headmaster" "Hmmph. Latecomers, I see! Do you realize how many seconds late you are? Take a seat and try not to disturb any more of my welcome speech. I’ll be sure to keep an eye on you troublemakers."
 
     p "What? No! This can’t happen on my first day! This isn’t my fault! I - I don’t understand!"
 

@@ -32,6 +32,15 @@ define kenji = Character("Kenji", color="#e62121")
 define rikona = Character("Rikona", color="#ffe714")
 define taigen = Character("Taigen", color="#0034e0")
 define yasuo = Character("Yasuo", color="#ff5100")
+define characterStats = Character(None, 
+    # what_font = "LHFmisterkookyREG_0.TTF", 
+    what_color = "ffffff",
+    what_size = 35, 
+    what_drop_shadow = (2, 2,),
+    what_xpos = 0.5,
+    what_ypos = 2.0,
+    window_background = None, 
+    window_bottom_margin = 600,)
 image sprite_animation = anim.Filmstrip("sprite_animation.png",(280, 385), (5,2), 0.125, loop=True)
 
 

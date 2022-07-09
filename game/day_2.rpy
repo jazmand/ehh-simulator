@@ -6,6 +6,10 @@ label day_2:
 
     p "What an exhausting day. But… I’m excited to meet my new roommates!"
 
+    # ----------TUTORIAL OF EHH SYSTEM HERE----------
+
+    "Random Character" "Are you ok? You’ve just been standing there, blankly, saying ‘eeeh’ over and over again…"
+
     "Girl's Voice(?)" "Oh, that must be them - our last roommate!"
 
     p "E-eh? Am I late again?"
@@ -16,11 +20,15 @@ label day_2:
 
     scene bg stats with dissolve
 
-    show sprite_animation:
-        xalign 0.8
-        yalign 0.5
+    # show sprite_animation:
+    #     xalign 0.8
+    #     yalign 0.5
 
-    centered "{color=#FFFFFF}NAME: KATSUMI\n
+    show katsumi:
+        xpos 0.1 zoom 1.2
+
+    characterStats "{color=#FFFFFF}
+    NAME: KATSUMI\n
     AGE: 19\n
     PRONOUNS: SHE/HER/HERS\n
     HEIGHT: 5’11\n
@@ -70,11 +78,11 @@ label day_2:
 
     scene bg stats with dissolve
 
-    show sprite_animation:
-        xalign 0.8
-        yalign 0.5
+    show yasuo:
+        xpos 0.1 zoom 1.2
 
-    centered "{color=#FFFFFF}NAME: YASUO\n
+    characterStats "{color=#FFFFFF}
+    NAME: YASUO\n
     AGE: 20\n
     PRONOUNS: HE/HIM/HIS\n
     HEIGHT: 5’5\n
@@ -83,7 +91,7 @@ label day_2:
     ZODIAC SIGN: PISCES\n
     BIRTHDAY: FEBRUARY 29TH\n
     LIKES: Vegetarian food, quiet time, true crime documentaries\n
-    DISLIKES: loud noises, deep water, sinus infections{/color}" 
+    DISLIKES: loud noises, deep water, sinus infections{/color}"
 
     scene bg communal with dissolve
 
