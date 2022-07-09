@@ -18,6 +18,8 @@ label day_2:
 
     p "Oh no… I’m not ready to meet them all at once!"
 
+    window hide
+
     scene bg stats with dissolve
 
     # show sprite_animation:
@@ -28,7 +30,8 @@ label day_2:
         xpos 0.1 zoom 1.2
 
     characterStats "{color=#FFFFFF}
-    NAME: KATSUMI\n
+    {size=+40}KATSUMI{/size}\n
+    \n
     AGE: 19\n
     PRONOUNS: SHE/HER/HERS\n
     HEIGHT: 5’11\n
@@ -40,6 +43,8 @@ label day_2:
     DISLIKES: soup, losing, lazy mornings{/color}"
 
     scene bg communal with dissolve
+
+    window show
 
     katsumi "HI! Nice to meet you! I’m Katsumi! What’s your name?"
 
@@ -76,13 +81,16 @@ label day_2:
 
     yasuo "I don’t need to train my muscles. Only my mind."
 
+    window hide
+
     scene bg stats with dissolve
 
     show yasuo:
         xpos 0.1 zoom 1.2
 
     characterStats "{color=#FFFFFF}
-    NAME: YASUO\n
+    {size=+40}YASUO{/size}\n
+    \n
     AGE: 20\n
     PRONOUNS: HE/HIM/HIS\n
     HEIGHT: 5’5\n
@@ -90,10 +98,14 @@ label day_2:
     BLOOD TYPE: O+\n
     ZODIAC SIGN: PISCES\n
     BIRTHDAY: FEBRUARY 29TH\n
-    LIKES: Vegetarian food, quiet time, true crime documentaries\n
-    DISLIKES: loud noises, deep water, sinus infections{/color}"
+    LIKES: Vegetarian food, quiet time,\n
+    true crime documentaries\n
+    DISLIKES: loud noises, deep water,\n
+    sinus infections{/color}"
 
     scene bg communal with dissolve
+
+    window show
 
     yasuo "You should all join me. Really, zazen can work absolute wonders for the mind."
 
