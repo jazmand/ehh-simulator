@@ -29,7 +29,7 @@ label day_2:
     show katsumi:
         xpos 0.1 zoom 1.2
 
-    characterStats "{color=#FFFFFF}
+    characterStats "
     {size=+40}KATSUMI{/size}\n
     \n
     AGE: 19\n
@@ -40,7 +40,7 @@ label day_2:
     ZODIAC SIGN: ARIES\n
     BIRTHDAY: MARCH 21ST\n
     LIKES: pork bowl, judo, k-dramas\n
-    DISLIKES: soup, losing, lazy mornings{/color}"
+    DISLIKES: soup, losing, lazy mornings"
 
     scene bg communal with dissolve
 
@@ -88,7 +88,7 @@ label day_2:
     show yasuo:
         xpos 0.1 zoom 1.2
 
-    characterStats "{color=#FFFFFF}
+    characterStats "
     {size=+40}YASUO{/size}\n
     \n
     AGE: 20\n
@@ -101,7 +101,7 @@ label day_2:
     LIKES: Vegetarian food, quiet time,\n
     true crime documentaries\n
     DISLIKES: loud noises, deep water,\n
-    sinus infections{/color}"
+    sinus infections"
 
     scene bg communal with dissolve
 
@@ -126,3 +126,165 @@ label day_2:
     "Girl's Voice(?)" "Heehee, no need to be so serious, Yasuo-senpai! <3"
 
     "Girl's Voice(?)" "This is supposed to be a FUN meeting of new pals! (and maybe more…) <3"
+
+    window hide
+
+    scene bg stats with dissolve
+
+    show ayumi:
+        xpos 0.1 ypos 0.1 zoom 1.2
+
+    characterStats "
+    {size=+40}AYUMI{/size}\n
+    \n
+    AGE: 18\n
+    PRONOUNS: SHE/HER/HERS\n
+    HEIGHT: 5’0\n
+    MAJOR: ART\n
+    BLOOD TYPE: AB-\n
+    ZODIAC SIGN: LEO\n
+    BIRTHDAY: August 5th\n
+    LIKES: cute animals, bubblegum\n
+    pop songs, dating sims\n
+    DISLIKES: Gabriel’s horn, bowl cuts,\n
+    house chores"
+    
+    scene bg communal with dissolve
+
+    window show
+
+    # ----------DIALOGUE HERE----------
+
+    window hide
+
+    scene bg stats with dissolve
+
+    show rikona:
+        xpos 0.1 ypos 0.1 zoom 1.2
+
+    characterStats "
+    {size=+40}RIKONA{/size}\n
+    \n
+    AGE: 18\n
+    PRONOUNS: SHE/HER/HERS\n
+    HEIGHT: 5’6\n
+    MAJOR: MATHEMATICS\n
+    BLOOD TYPE: A-\n
+    ZODIAC SIGN: SCORPIO\n
+    BIRTHDAY: October 30th\n
+    LIKES: logic puzzles, jell-o, nail polish\n
+    DISLIKES: irrational numbers,\n
+    people who set world records,\n
+    cup ramen"
+    
+    scene bg communal with dissolve
+
+    window show
+
+    # ----------DIALOGUE HERE----------
+
+    window hide
+
+    scene bg stats with dissolve
+
+    show taigen:
+        xpos 0.1 zoom 1.2
+
+    characterStats "
+    {size=+40}TAIGEN{/size}\n
+    \n
+    AGE: 18\n
+    PRONOUNS: HE/HIM/HIS\n
+    HEIGHT: 5’2\n
+    MAJOR: BUSINESS STUDIES\n
+    BLOOD TYPE: A+\n
+    ZODIAC SIGN: VIRGO\n
+    BIRTHDAY: September 12th\n
+    LIKES: 0110001001110101011101000111010001110011, batteries, money\n
+    DISLIKES: clowns, slow walkers, crystal pepsi"
+    
+    scene bg communal with dissolve
+
+    window show
+
+    # ----------DIALOGUE HERE----------
+
+    window hide
+
+    scene bg stats with dissolve
+
+    show kenji:
+        xpos 0.1 zoom 1.2
+
+    characterStats "
+    {size=+40}KENJI{/size}\n
+    \n
+    AGE: 18\n
+    PRONOUNS: HE/HIM/HIS\n
+    HEIGHT: 6’1\n
+    MAJOR: WASTE MANAGEMENT\n
+    BLOOD TYPE: O-\n
+    ZODIAC SIGN: SAGITTARIUS\n
+    BIRTHDAY: December 10th\n
+    LIKES: corn mayonnaise pizza, 90s sitcoms, recycling\n
+    DISLIKES: off-brand cereals, trash, slobs"
+    
+    scene bg communal with dissolve
+
+    window show
+
+    # ----------DIALOGUE HERE----------
+
+    window hide
+
+    scene bg stats with dissolve
+
+    show aoi:
+        xpos 0.1 zoom 1.2
+
+    characterStats "
+    {size=+40}AOI{/size}\n
+    \n
+    AGE: 24\n
+    PRONOUNS: THEY/THEM/THEIRS\n
+    HEIGHT: 5’9\n
+    MAJOR: LITERATURE AND SCIENCE DUAL\n
+    BLOOD TYPE: AB+\n
+    ZODIAC SIGN: GEMINI\n
+    BIRTHDAY: June 3rd\n
+    LIKES: ice cream, finding loose coins, death metal\n
+    DISLIKES: the FBI, film noir, WWE smackdown"
+    
+    scene bg communal with dissolve
+
+    window show
+
+
+    # ----------DIALOGUE HERE----------
+
+    window hide
+
+    scene bg stats with dissolve
+
+    show coffee:
+        xpos 0.1 zoom 1.2
+
+    characterStats "
+    {size=+40}COFFEE-KUN{/size}\n
+    \n
+    AGE: ???\n
+    PRONOUNS: COFFEE/COFFEE/COFFEE\n
+    HEIGHT: 1’3\n
+    MAJOR: COFFEE\n
+    BLOOD TYPE: COFFEE\n
+    ZODIAC SIGN: TAURUS\n
+    BIRTHDAY: April 20TH\n
+    LIKES: coffee, texting, you\n
+    DISLIKES: tea, consequences, sexism"
+    
+    scene bg communal with dissolve
+
+    window show
+
+
+
